@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Payment form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding:50px;
+            font-size: 17px;
+        }
+        form{
+            margin: 0 25%;
+            background-color: whitesmoke;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgrey;
+            border-radius: 4px;
+        }
+        header{
+            text-align: center;
+            color: green;
+            font-family: 'Times New Roman', Times, serif;
+            transition: 0.5S ease;
+        }
+        header:hover{
+            color: red;
+            font-size: 18px;
+        }
+        header::after{
+            transition: 1s;
+        }
+        #cvv,#card,#ed,#cn{
+            width: 100%;
+        }
+        #pn{
+            text-align: center;
+            padding: 12px 20px ;
+            border-radius: 4px;
+            background-color: aliceblue;
+            color: black;
+            width: 50%;
+            font-size: 20px;
+            margin-left: 25%;
+            cursor: pointer;
+        }
+        #pn:hover{
+            
+            background-color: seagreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <header>
+        <h1>BOOK NOW</h1>
+    </header> 
+    
+    <p>Card name: <select name="card" id="card">
+        <option value="">--Select a card type--</option>
+        <option value="visa">Visa</option>
+        <option value="Rupay">Rupay</option>
+        <option value="Mastercard">Mastercard</option>
+    </select> </p>
+    <p>Card number: <input type="number" name="cn" id="cn" placeholder="#### #### #### ####" required></p>
+    <p>Expiry date:<input type="date" name="ed" id="ed"></p>
+    <p>Cvv: <input type="password" name="cvv" id="cvv"  required></p>
+    <hr>
+    <p>NOTE:  I AGREE THAT ALL THE INFORMATIONS ARE CORRECT<input type="checkbox" name="checkbox"  id="checkbox" required></p>
+    <hr>
+    <input type="submit" value="Pay Now" id="pn">
+    </form>
+</body>
+</html>
