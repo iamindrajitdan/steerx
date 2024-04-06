@@ -4,67 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: url('fmm.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-shadow: 2px 2px 2px black;
+            letter-spacing: 1px;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 2% auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .contact-info > div {
+            flex: 1 1 200px;
+            font-size: large;
+            color: white;
+        }
+        .contact-info img {
+            width: 50px;
+            height: 50px;
+        }
+        .sc {
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            .contact-info > div {
+                flex-basis: 100%;
+            }
+        }
+    </style>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }    
-    header{
-        margin-top: 5px;
-        align-items: center;
-        padding-left: 40%;
-        color: white;
-    }
-    div{
-        margin-top: 7%;
-        margin-left: 12%;
-        font-size: xx-large;
-        border-radius: 4px; 
-        padding: 20px 30px; 
-    }
-    p{
-        color: white;
-    }
-    a{
-        outline: none;
-        color: white;
-        
-    }
-    img{
-        width: 30px;
-        height: 30px;
-    }
-    body{
-        background: url('fmm.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-shadow: 2px 2px 2px black;
-        letter-spacing: 1px;
-    }
-    .sc{
-        margin-left: 12%;
-    }
-
-</style>
 <body>
     <header>
         <h1>CONTACT US</h1>
     </header>
-    <div>
-    <img src="pn.png" alt="Phone no." id="pn"> <a href="tel:+918927266416">Call Now</a><br>
-    <img src="pngwing.com.png" alt="Facebook" id="fb">
-    <a href="https://www.facebook.com/indrajit.dan.980" target="_blank">Indrajit Dan</a>
-    <br>
-    <img src="ig.png" alt="Instagram" id="ig">
-    <a href="https://www.instagram.com/your_bawal_chele/" target="_blank">Indrajit Dan</a>
-    <br>
-    <img src="wp.png" alt="Whatsapp" id="wp">
-    <a href="https://wa.me/+918927266416text=Please help me!"target="_blank">Whatsapp</a><br>
-    <img src="mail.png" alt="Gmail" id="g"> 
-    <a href="mailto:iamindrajitdan@gmail.com" target="_blank">iamindrajitdan@gmail.com</a>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div>
+                <img src="pn.png" alt="Phone no."> <a href="tel:+918927266416">Call Now</a>
+            </div>
+            <div>
+                <img src="pngwing.com.png" alt="Facebook">
+                <a href="https://www.facebook.com/indrajit.dan.980" target="_blank">Indrajit Dan</a>
+            </div>
+            <div>
+                <img src="ig.png" alt="Instagram">
+                <a href="https://www.instagram.com/your_bawal_chele/" target="_blank">Indrajit Dan</a>
+            </div>
+            <div>
+                <img src="wp.png" alt="Whatsapp">
+                <a href="https://wa.me/+918927266416?text=Please help me!" target="_blank">Whatsapp</a>
+            </div>
+            <div>
+                <img src="mail.png" alt="Gmail">
+                <a href="mailto:iamindrajitdan@gmail.com" target="_blank">iamindrajitdan@gmail.com</a>
+            </div>
+        </div>
     </div>
     <p class="sc">STAY CONNECTED <br>THANK YOU</p>
 </body>
